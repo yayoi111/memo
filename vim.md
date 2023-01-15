@@ -1,0 +1,1 @@
+[error ubuntu](https://learn.microsoft.com/ja-jp/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
