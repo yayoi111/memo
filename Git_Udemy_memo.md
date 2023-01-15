@@ -107,6 +107,37 @@
  ```
 
  ## 直前のコミットをやり直す
+これは、push前のみ使用が可能。使用後は、コミットをして修正が必要。
+
  ``` 
  git commit --amend 
  ```
+
+ ## リモートから情報を取得する(フェッチ ＆ マージ)
+
+ リモートリポジトリからローカルリポジトリへ保存する。
+ 保存先は、(remotes/リモート名/ブランチ名)
+ 
+ その後マージをするとワークツリーへ反映することができる。
+
+ ```
+ # 詳細を知りたい場合
+  git remote show origin
+ ```
+
+ ## リモートを変更する・消去する
++ リモート名を変更する 
+ ```
+ git remote rename <旧リモート名> <新リモート名>
+
+ #example 
+ git remote rename tutorial new_tutorial
+ ```
+ + リモート名を削除する
+ ```
+ git remote rm <リモート名>
+
+ #example 
+ git remote rm tutorial new_tutorial
+ ```
+
